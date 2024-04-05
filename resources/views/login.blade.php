@@ -39,6 +39,7 @@
     </div>
 
     <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+    <a href="">Registrate</a>
 </form>
     </main>
     <footer>

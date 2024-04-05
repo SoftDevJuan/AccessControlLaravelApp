@@ -1,0 +1,81 @@
+/* Estilos para la barra lateral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0; /* Altura de la barra de navegación superior */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px); /* Altura de la barra de navegación superior */
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scroll si el contenido es demasiado largo */
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    margin-left: 240px; /* Ancho de la barra lateral */
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.table th,
+.table td {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 240px; /* Ancho de la barra lateral */
+    width: calc(100% - 240px);
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
+.sidebar {
+    /* tus estilos aquí */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.sidebar.active {
+    transform: translateX(0);
+}
+/* Estilos para centrar el texto y ordenar el contenido */
+.card {
+    text-align: center; /* Centra el texto dentro de las tarjetas */
+}
+
+.table {
+    margin: 0 auto; /* Centra la tabla horizontalmente */
+}
+
+.text-center {
+    text-align: center !important; /* Centra el texto */
+}

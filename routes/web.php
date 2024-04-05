@@ -28,6 +28,10 @@ Route::get('/login-registro', function () {
     return view('login_registro');
 })->name('login_registro');
 
+Route::get('/app', function () {
+    return view('app');
+})->name('app');
+
 Route::post('/login', 'Auth\LoginController@login')->name('login');
 Route::post('/register', 'Auth\RegisterController@register')->name('register');
 
